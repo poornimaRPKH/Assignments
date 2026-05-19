@@ -1,0 +1,456 @@
+# Import NumPy
+import numpy as np
+
+# 1. Create a 1D NumPy Array
+temperatures_w1 = np.array([22.5, 25.3, 20.8, 23.4, 26.1, 24.8, 21.9])
+
+print("Week 1 Temperatures:")
+print(temperatures_w1)
+
+# 2. Inspection and Properties
+print("\nShape of array:")
+print(temperatures_w1.shape)
+
+print("\nData type:")
+print(temperatures_w1.dtype)
+
+print("\nNumber of elements:")
+print(temperatures_w1.size)
+
+# 3. Array Operations
+
+# Celsius to Fahrenheit
+fahrenheit = (temperatures_w1 * 9/5) + 32
+
+print("\nTemperatures in Fahrenheit:")
+print(fahrenheit)
+
+# Maximum temperature
+print("\nMaximum temperature:")
+print(np.max(temperatures_w1))
+
+# Minimum temperature
+print("\nMinimum temperature:")
+print(np.min(temperatures_w1))
+
+# Mean temperature
+print("\nMean temperature:")
+print(np.mean(temperatures_w1))
+
+# 4. Array Slicing and Indexing
+
+# First three days
+print("\nFirst three days temperatures:")
+print(temperatures_w1[:3])
+
+# Weekend temperatures (last two days)
+print("\nWeekend temperatures:")
+print(temperatures_w1[-2:])
+
+# Middle three days
+print("\nMiddle three days temperatures:")
+print(temperatures_w1[2:5])
+
+# 5. Create a 2D Array
+temperatures = np.array([
+    [22.5, 25.3, 20.8, 23.4, 26.1, 24.8, 21.9],
+    [19.2, 22.5, 21.3, 24.0, 23.5, 22.8, 20.1]
+])
+
+print("\n2D Temperature Array:")
+print(temperatures)
+
+# 6. Inspect and Slice the 2D Array
+
+# Shape
+print("\nShape of 2D array:")
+print(temperatures.shape)
+
+# Data type
+print("\nData type of 2D array:")
+print(temperatures.dtype)
+
+# Total number of elements
+print("\nTotal number of elements:")
+print(temperatures.size)
+
+# Week 1 temperatures
+print("\nWeek 1 temperatures:")
+print(temperatures[0])
+
+# Week 2 temperatures
+print("\nWeek 2 temperatures:")
+print(temperatures[1])
+
+# Weekend temperatures for both weeks
+print("\nWeekend temperatures for both weeks:")
+print(temperatures[:, -2:])
+
+# NumPy means Numerical Python
+# We use NumPy for numbers and arrays
+
+# Import NumPy library
+import numpy as np
+
+
+# ------------------------------
+# 1. Create 1D Array
+# ------------------------------
+
+# Create Week 1 temperature array
+temperatures_w1 = np.array([22.5, 25.3, 20.8, 23.4, 26.1, 24.8, 21.9])
+
+# Print the temperatures
+print("Week 1 Temperatures")
+print(temperatures_w1)
+
+
+# ------------------------------
+# 2. Inspect Array Details
+# ------------------------------
+
+# .shape tells the size of the array
+print("\nShape of array")
+print(temperatures_w1.shape)
+
+# .dtype tells the data type
+print("\nData type")
+print(temperatures_w1.dtype)
+
+# .size tells total number of values
+print("\nNumber of elements")
+print(temperatures_w1.size)
+
+
+# ------------------------------
+# 3. Celsius to Fahrenheit
+# Formula = (C * 9/5) + 32
+# ------------------------------
+
+# Convert temperatures to Fahrenheit
+fahrenheit = (temperatures_w1 * 9/5) + 32
+
+# Print Fahrenheit values
+print("\nTemperature in Fahrenheit")
+print(fahrenheit)
+
+
+# ------------------------------
+# Find Maximum Temperature
+# ------------------------------
+
+# np.max() finds biggest value
+print("\nMaximum Temperature")
+print(np.max(temperatures_w1))
+
+
+# ------------------------------
+# Find Minimum Temperature
+# ------------------------------
+
+# np.min() finds smallest value
+print("\nMinimum Temperature")
+print(np.min(temperatures_w1))
+
+
+# ------------------------------
+# Find Average Temperature
+# ------------------------------
+
+# np.mean() finds average
+print("\nMean Temperature")
+print(np.mean(temperatures_w1))
+
+
+# ------------------------------
+# 4. Array Slicing
+# ------------------------------
+
+# First 3 days
+# :3 means start to index 2
+print("\nFirst 3 Days")
+print(temperatures_w1[:3])
+
+
+# Weekend temperatures
+# -2: means last 2 values
+print("\nWeekend Temperatures")
+print(temperatures_w1[-2:])
+
+
+# Middle 3 days
+# 2:5 means index 2 to 4
+print("\nMiddle 3 Days")
+print(temperatures_w1[2:5])
+
+
+# ------------------------------
+# 5. Create 2D Array
+# ------------------------------
+
+# Create 2 weeks temperature data
+temperatures = np.array([
+    [22.5, 25.3, 20.8, 23.4, 26.1, 24.8, 21.9],
+    [19.2, 22.5, 21.3, 24.0, 23.5, 22.8, 20.1]
+])
+
+# Print 2D array
+print("\n2D Temperature Array")
+print(temperatures)
+
+
+# ------------------------------
+# 6. Inspect 2D Array
+# ------------------------------
+
+# Shape of 2D array
+print("\nShape")
+print(temperatures.shape)
+
+# Data type of 2D array
+print("\nData Type")
+print(temperatures.dtype)
+
+# Total elements in 2D array
+print("\nTotal Elements")
+print(temperatures.size)
+
+
+# ------------------------------
+# Get Week 1 Data
+# ------------------------------
+
+# 0 means first row
+print("\nWeek 1 Temperatures")
+print(temperatures[0])
+
+
+# ------------------------------
+# Get Week 2 Data
+# ------------------------------
+
+# 1 means second row
+print("\nWeek 2 Temperatures")
+print(temperatures[1])
+
+
+# ------------------------------
+# Weekend Temperatures
+# ------------------------------
+
+# : means all rows
+# -2: means last 2 columns
+print("\nWeekend Temperatures For Both Weeks")
+print(temperatures[:, -2:])
+# Import pandas
+import pandas as pd
+
+
+# -------------------------
+# 1. Create Pandas Series
+# -------------------------
+
+# Create marks series
+marks = pd.Series(
+    [95, 92, 89, 85, 80],
+    index=["Rank1", "Rank2", "Rank3", "Rank4", "Rank5"]
+)
+
+# Print series
+print("Student Marks")
+print(marks)
+
+
+# -------------------------
+# 2. Indexing and Slicing
+# -------------------------
+
+# Get 1st rank mark using position
+# 0 means first value
+print("\n1st Rank Mark")
+print(marks[0])
+
+
+# Get top 3 ranks using loc
+# loc uses names
+print("\nTop 3 Ranks")
+print(marks.loc[["Rank1", "Rank2", "Rank3"]])
+
+
+# Get 3rd rank using iloc
+# iloc uses number position
+print("\n3rd Rank Mark")
+print(marks.iloc[2])
+
+
+# Marks greater than 90
+print("\nMarks Greater Than 90")
+print(marks[marks > 90])
+
+
+# -------------------------
+# 3. Manipulating Series
+# -------------------------
+
+# Change Rank1 mark to 100
+marks["Rank1"] = 100
+
+print("\nAfter Changing Rank1 Mark")
+print(marks)
+
+
+# Remove last rank
+marks = marks.drop("Rank5")
+
+print("\nAfter Removing Last Rank")
+print(marks)
+
+
+# Find CGPA
+# Divide all marks by 10
+cgpa = marks / 10
+
+print("\nCGPA")
+print(cgpa)
+# Import pandas
+import pandas as pd
+
+
+# ---------------------------
+# 1. Create DataFrame
+# ---------------------------
+
+# Create dictionary data
+data = {
+    "TransactionID": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
+
+    "ProductCategory": [
+        "Electronics",
+        "Clothing",
+        "Electronics",
+        "Furniture",
+        "Clothing",
+        "Electronics",
+        "Furniture",
+        "Clothing",
+        "Furniture",
+        "Electronics"
+    ],
+
+    "Region": [
+        "North",
+        "South",
+        "North",
+        "East",
+        "West",
+        "North",
+        "East",
+        "West",
+        "South",
+        "North"
+    ],
+
+    "Amount": [200, 150, 300, 450, 200, 250, 300, 180, 350, 400]
+}
+
+# Create DataFrame
+transactions = pd.DataFrame(data)
+
+# Print DataFrame
+print("Transactions DataFrame")
+print(transactions)
+
+
+# ---------------------------
+# 2. Data Exploration
+# ---------------------------
+
+# First 5 rows
+print("\nHead")
+print(transactions.head())
+
+
+# Last 5 rows
+print("\nTail")
+print(transactions.tail())
+
+
+# Shape of DataFrame
+print("\nShape")
+print(transactions.shape)
+
+
+# Column names
+print("\nColumn Names")
+print(transactions.columns)
+
+
+# Data types
+print("\nData Types")
+print(transactions.dtypes)
+
+
+# Show only ProductCategory and Amount
+print("\nProductCategory and Amount")
+print(transactions[["ProductCategory", "Amount"]])
+
+
+# Last 3 columns using iloc
+print("\nLast 3 Columns")
+print(transactions.iloc[:, -3:])
+
+
+# Filter North region and Amount > 200
+print("\nNorth Region and Amount Greater Than 200")
+print(transactions[
+    (transactions["Region"] == "North") &
+    (transactions["Amount"] > 200)
+])
+
+
+# Count ProductCategory values
+print("\nProduct Category Count")
+print(transactions["ProductCategory"].value_counts())
+
+
+# Unique Region values
+print("\nUnique Regions")
+print(transactions["Region"].unique())
+
+
+# Mean amount by Region
+print("\nMean Amount By Region")
+print(transactions.groupby("Region")["Amount"].mean())
+
+
+# ---------------------------
+# 3. Manipulating DataFrame
+# ---------------------------
+
+# Change Amount for TransactionID 102
+transactions.loc[transactions["TransactionID"] == 102, "Amount"] = 165
+
+print("\nAfter Changing Amount")
+print(transactions)
+
+
+# Add Discount column
+# 10% discount
+transactions["Discount"] = transactions["Amount"] * 0.10
+
+print("\nAfter Adding Discount")
+print(transactions)
+
+
+# Remove row with TransactionID 109
+transactions = transactions[transactions["TransactionID"] != 109]
+
+print("\nAfter Removing TransactionID 109")
+print(transactions)
+
+
+# Delete Discount column
+del transactions["Discount"]
+
+print("\nAfter Deleting Discount Column")
+print(transactions)
