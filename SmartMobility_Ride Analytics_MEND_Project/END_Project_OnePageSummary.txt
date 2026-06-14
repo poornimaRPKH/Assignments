@@ -1,0 +1,23 @@
+One-Page Executive Summary
+Objective
+
+To analyze ride-trip data using Data Science, Probability, Statistics, Linear Algebra, and Hypothesis Testing techniques.
+
+Key Findings
+Trip Distance has a negligible effect on Fare Amount.
+Premium rides are not significantly more expensive than Economy rides.
+Surge Pricing does not significantly influence Customer Ratings.
+Peak-hour rides do not generate significantly different revenue compared to Non-Peak rides.
+Only one fare anomaly was detected.
+Economy rides account for a substantial share of ride demand.
+No single operational factor dominates business performance.
+Fare estimates are statistically stable based on confidence intervals and bootstrapping.
+Recommendations
+Review fare pricing strategy because Premium rides are not generating significantly higher fares.
+Investigate additional variables influencing fare amounts beyond trip distance.
+Focus on service quality improvements rather than surge pricing adjustments to improve customer satisfaction.
+Continue monitoring fare anomalies to identify potential pricing errors.
+Use customer behavior and demand patterns to optimize ride-category offerings.
+Overall Conclusion
+
+Statistical analysis indicates that pricing, ride category, surge multiplier, and operational factors exhibit relatively weak relationships in the dataset. Business decisions should therefore consider multiple variables together rather than relying on any single factor. The results are supported by correlation analysis, probability theory, inferential statistics, confidence intervals, bootstrapping, and hypothesis testing.
