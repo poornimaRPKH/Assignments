@@ -1,0 +1,451 @@
+# TASK 1 – DATA LOADING & INSPECTION
+
+## 1. Import Pandas Library
+
+Code:
+
+import pandas as pd
+
+Explanation:
+
+* Imports the Pandas library.
+* Used for reading and manipulating datasets.
+* "pd" is an alias (short name) for Pandas.
+
+Presentation:
+"I imported the Pandas library because it helps me work with datasets in tabular form."
+
+---
+
+## 2. Import NumPy Library
+
+Code:
+
+import numpy as np
+
+Explanation:
+
+* Imports the NumPy library.
+* Used for numerical and mathematical operations.
+* "np" is the alias for NumPy.
+
+Presentation:
+"I imported NumPy because it provides support for numerical calculations."
+
+---
+
+## 3. Store Dataset URL
+
+Code:
+
+url = "https://raw.githubusercontent.com/GeethaGunasekaran1/Dataset_rep/refs/heads/main/diabetes.csv"
+
+Explanation:
+
+* Stores the location of the dataset.
+* The URL points to the diabetes dataset stored online.
+
+Presentation:
+"I stored the dataset URL in a variable named url."
+
+---
+
+## 4. Load Dataset from URL
+
+Code:
+
+df = pd.read_csv(url)
+
+Explanation:
+
+* read_csv() reads a CSV file.
+* Loads the dataset from the internet.
+* Stores it in a DataFrame called df.
+
+Presentation:
+"I loaded the diabetes dataset from GitHub and stored it in a DataFrame named df."
+
+---
+
+## 5. Save Dataset Locally
+
+Code:
+
+df.to_csv("diabetes.csv", index=False)
+
+Explanation:
+
+* Saves the dataset to the local computer.
+* Creates a file named diabetes.csv.
+* index=False prevents row numbers from being saved.
+
+Presentation:
+"I saved the online dataset as a local CSV file for future use."
+
+---
+
+## 6. Display Download Message
+
+Code:
+
+print("File downloaded successfully!")
+
+Explanation:
+
+* Prints a confirmation message.
+
+Presentation:
+"This message confirms that the dataset was downloaded successfully."
+
+---
+
+## 7. Load Dataset from Local File
+
+Code:
+
+df = pd.read_csv("diabetes.csv")
+
+Explanation:
+
+* Reads the saved CSV file.
+* Stores the data again in df.
+
+Presentation:
+"I loaded the dataset from my local system."
+
+---
+
+## 8. Display First Five Records
+
+Code:
+
+print(df.head())
+
+Explanation:
+
+* head() displays the first five rows.
+* Helps verify successful loading.
+
+Presentation:
+"I displayed the first five records to understand the structure of the dataset."
+
+---
+
+## 9. Display Dataset Loaded Message
+
+Code:
+
+print("Dataset Loaded Successfully!")
+
+Explanation:
+
+* Displays a confirmation message.
+
+Presentation:
+"This confirms that the dataset is ready for analysis."
+
+---
+
+## 10. Display First Five Records Again
+
+Code:
+
+print(df.head())
+
+Explanation:
+
+* Displays the first five rows again.
+
+Presentation:
+"I verified the dataset contents by displaying the first five rows."
+
+---
+
+## 11. Print HEAD Label
+
+Code:
+
+print("HEAD")
+
+Explanation:
+
+* Prints a heading before showing records.
+
+Presentation:
+"This heading indicates the first five records."
+
+---
+
+## 12. Show First Five Rows
+
+Code:
+
+print(df.head())
+
+Explanation:
+
+* Displays the first five rows of the dataset.
+
+Presentation:
+"The first five records provide an overview of the data."
+
+---
+
+## 13. Print TAIL Label
+
+Code:
+
+print("\nTAIL")
+
+Explanation:
+
+* Prints the word TAIL.
+* \n creates a new line.
+
+Presentation:
+"This heading indicates the last five records."
+
+---
+
+## 14. Show Last Five Rows
+
+Code:
+
+print(df.tail())
+
+Explanation:
+
+* Displays the last five rows.
+
+Presentation:
+"I used tail() to view the last five records of the dataset."
+
+---
+
+## 15. Print SHAPE Label
+
+Code:
+
+print("\nSHAPE")
+
+Explanation:
+
+* Displays a heading for dataset dimensions.
+
+Presentation:
+"This section shows the size of the dataset."
+
+---
+
+## 16. Display Dataset Shape
+
+Code:
+
+print(df.shape)
+
+Output:
+
+(1009, 15)
+
+Explanation:
+
+* shape returns (rows, columns).
+
+Interpretation:
+
+* 1009 rows
+* 15 columns
+
+Presentation:
+"The dataset contains 1009 patient records and 15 features."
+
+---
+
+## 17. Print COLUMNS Label
+
+Code:
+
+print("\nCOLUMNS")
+
+Explanation:
+
+* Displays a heading.
+
+Presentation:
+"This section displays all column names."
+
+---
+
+## 18. Display Column Names
+
+Code:
+
+print(df.columns)
+
+Explanation:
+
+* Shows all feature names in the dataset.
+
+Presentation:
+"I displayed all column names to understand the available attributes."
+
+---
+
+## 19. Print INFO Label
+
+Code:
+
+print("\nINFO")
+
+Explanation:
+
+* Displays an information heading.
+
+Presentation:
+"This section provides a summary of the dataset."
+
+---
+
+## 20. Display Dataset Information
+
+Code:
+
+print(df.info())
+
+Explanation:
+
+* Shows:
+
+  * Number of rows
+  * Number of columns
+  * Data types
+  * Missing values
+  * Memory usage
+
+Presentation:
+"I used info() to understand the structure of the dataset and identify missing values."
+
+---
+
+## 21. Print DATA TYPES Label
+
+Code:
+
+print("\nDATA TYPES")
+
+Explanation:
+
+* Displays a heading.
+
+Presentation:
+"This section shows the datatype of every column."
+
+---
+
+## 22. Display Data Types
+
+Code:
+
+print(df.dtypes)
+
+Explanation:
+
+* Displays the datatype of each feature.
+
+Presentation:
+"I checked the datatype of each column to classify them as numerical or categorical."
+
+---
+
+## 23. Define Categorical Columns
+
+Code:
+
+categorical_cols = ['Gender', 'CLASS']
+
+Explanation:
+
+* Gender contains category values such as M and F.
+* CLASS contains category values such as N, P and Y.
+
+Presentation:
+"I manually identified Gender and CLASS as categorical columns."
+
+---
+
+## 24. Display Categorical Columns
+
+Code:
+
+print("\nCATEGORICAL COLUMNS")
+print(categorical_cols)
+
+Output:
+
+['Gender', 'CLASS']
+
+Presentation:
+"The dataset contains two categorical columns: Gender and CLASS."
+
+---
+
+## 25. Identify Numerical Columns
+
+Code:
+
+numerical_cols = df.select_dtypes(include=['number']).columns
+
+Explanation:
+
+* Selects all columns containing numeric values.
+
+Presentation:
+"I identified all numerical columns using select_dtypes()."
+
+---
+
+## 26. Display Numerical Columns
+
+Code:
+
+print("NUMERICAL COLUMNS")
+print(list(numerical_cols))
+
+Output:
+
+['Unnamed: 0', 'ID', 'No_Pation', 'AGE', 'Urea', 'Cr', 'HbA1c', 'Chol', 'TG', 'HDL', 'LDL', 'VLDL', 'BMI']
+
+Presentation:
+"I displayed all numerical columns which will be used for analysis and machine learning."
+
+
+Data Cleaning Summary
+
+✔ Renamed columns:
+
+ID → Visit_ID
+No_Pation → Patient_ID
+
+✔ Standardized Gender values:
+
+Converted f to F
+
+✔ Checked CLASS values:
+
+N = No Diabetes
+P = Pre-Diabetes
+Y = Diabetes
+
+✔ Generated statistical summary using describe()
+
+✔ Visualized numerical columns using boxplot
+
+✔ Identified missing values
+
+✔ Imputed missing numerical values using Median
+
+✔ Imputed missing categorical values using Mode
+
+✔ Checked duplicates
+
+✔ No duplicate rows found
